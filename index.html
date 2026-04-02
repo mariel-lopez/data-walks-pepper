@@ -11,13 +11,17 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      background: #0d0d0e;
+      background-color: #f5f0e6;
+      background-image:
+        linear-gradient(rgba(180,170,150,0.18) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(180,170,150,0.18) 1px, transparent 1px);
+      background-size: 62px 62px;
       min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
       font-family: 'Geist', sans-serif;
-      padding: 55px 28px;
+      padding: 64px 28px;
     }
 
     /* ── Binder shell ── */
@@ -25,12 +29,13 @@
       position: relative;
       display: flex;
       width: min(1380px, 100%);
-      min-height: 736px;
+      min-height: 860px;
       background: #7a1718;
       border-radius: 7px 21px 21px 7px;
       box-shadow:
         -7px 0 0 #5e1010,
-        0 18px 69px rgba(0,0,0,0.75),
+        0 24px 80px rgba(100,60,40,0.22),
+        0 8px 32px rgba(100,60,40,0.13),
         inset -3px 0 12px rgba(0,0,0,0.25);
     }
 
