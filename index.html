@@ -6,7 +6,7 @@
   <title>Mariel Lopez — Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Cormorant+Garamond:ital,wght@1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&family=Geist+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -16,7 +16,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: 'Inter', sans-serif;
+      font-family: 'Geist', sans-serif;
       padding: 55px 28px;
     }
 
@@ -53,10 +53,16 @@
       justify-content: center;
       cursor: pointer;
       border-radius: 5px 0 0 5px;
-      transition: filter 0.2s;
+      transition: width 0.25s cubic-bezier(0.34, 1.56, 0.64, 1),
+                  transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1),
+                  filter 0.2s;
     }
 
-    .tab:hover { filter: brightness(1.15); }
+    .tab:hover {
+      width: 42px;
+      transform: translateX(-12px);
+      filter: brightness(1.1);
+    }
 
     .tab span {
       writing-mode: vertical-rl;
@@ -64,7 +70,7 @@
       font-size: 9px;
       font-weight: 600;
       letter-spacing: 0.13em;
-      font-family: 'Inter', sans-serif;
+      font-family: 'Geist', sans-serif;
       color: rgba(255,255,255,0.92);
       text-transform: uppercase;
     }
@@ -112,6 +118,7 @@
       letter-spacing: 0.14em;
       text-transform: uppercase;
       color: #9e9080;
+      font-family: 'Geist Mono', monospace;
     }
 
     .dot {
@@ -127,10 +134,11 @@
       font-weight: 400;
       letter-spacing: 0.1em;
       color: #9e9080;
+      font-family: 'Geist Mono', monospace;
     }
 
     .hero-title {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Geist', sans-serif;
       font-weight: 800;
       font-size: clamp(44px, 5.2vw, 62px);
       line-height: 1.04;
@@ -142,7 +150,7 @@
     .hero-title .word-pink  { color: #c8788e; }
 
     .bio {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Geist', sans-serif;
       font-size: 15px;
       line-height: 1.75;
       color: #3e3e50;
@@ -154,7 +162,7 @@
       display: inline-block;
       background: #f0d060;
       padding: 13px 30px 16px 30px;
-      font-family: 'Cormorant Garamond', serif;
+      font-family: 'Geist Mono', monospace;
       font-style: italic;
       font-size: 26px;
       color: #3a3020;
@@ -183,6 +191,7 @@
       text-transform: uppercase;
       color: #a09080;
       margin-bottom: 10px;
+      font-family: 'Geist Mono', monospace;
     }
 
     .social-links {
@@ -198,6 +207,7 @@
       color: #7a7060;
       text-decoration: none;
       transition: color 0.2s;
+      font-family: 'Geist Mono', monospace;
     }
 
     .social-links a:hover { color: #1c1c30; }
@@ -208,7 +218,7 @@
       left: 44px;
       font-size: 10px;
       color: #b8b0a0;
-      font-family: 'Inter', sans-serif;
+      font-family: 'Geist', sans-serif;
     }
 
     /* ── Spine + rings ── */
@@ -261,6 +271,7 @@
       letter-spacing: 0.14em;
       text-transform: uppercase;
       color: #9e9080;
+      font-family: 'Geist Mono', monospace;
     }
 
     /* ── Project item ── */
@@ -276,7 +287,7 @@
     }
 
     .project-title {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Geist', sans-serif;
       font-weight: 700;
       font-size: 15.5px;
       letter-spacing: 0.06em;
@@ -312,6 +323,7 @@
       text-transform: uppercase;
       color: #9e9080;
       margin-bottom: 13px;
+      font-family: 'Geist Mono', monospace;
     }
 
     .project-thumb {
@@ -340,7 +352,7 @@
       font-size: 13px;
       color: #b0a898;
       font-style: italic;
-      font-family: 'Cormorant Garamond', serif;
+      font-family: 'Geist Mono', monospace;
       letter-spacing: 0.02em;
     }
 
@@ -350,7 +362,7 @@
       right: 39px;
       font-size: 10px;
       color: #b8b0a0;
-      font-family: 'Inter', sans-serif;
+      font-family: 'Geist', sans-serif;
     }
 
     /* ── Responsive ── */
